@@ -188,7 +188,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="grass2">
+            <div className="grass2"> 
                 <div className="grass1">
                 <h1>Instagram Shop</h1>
                 <p>Tag @miniture in your Instagram photos for<br></br> a chance to be featured here.</p>

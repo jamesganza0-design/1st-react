@@ -3,10 +3,10 @@
 }
 .iture{
   font-family: helvetica;
-  margin-left: 2.5rem;
+  margin-left: 2.1rem;
 }
 .icons{
-  margin-right: 3rem;
+  margin-right: 1.8rem;
 }
 .blogg:hover{
   color: orange;
@@ -23,7 +23,7 @@
     background-color: aliceblue;
         height: 120px;
     background: white;
-  border-bottom: 0.2px solid black;
+  border-bottom: 0px solid black;
 }
 .icon1{
   font-size: 27px;
@@ -645,6 +645,134 @@ width: 15rem;
   padding: 0px 10px;
   margin-right: 1rem;
 }
-
-
+.elegance{
+  background-color: aliceblue;
+  position: absolute;
+  top: 100px;
+  padding: 2rem;
+  border-radius: 20px;
+  color: black;
+}
+.elegance:hover{
+  color: orange;
+}
+.jeans{
+  position: absolute;
+  top: 100px;
+  border-radius: 35px;
+  display: flex;
+  margin-right: 5rem;
+}
+.ganza13{
+  display: flex;
+}
+.finger{
+  display: flex;
+  align-items: end;
+}
+.bat1{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 15px;
+}
+.container3{
+  margin-top: 200px;
+  padding: 1.5rem;
+}
+.attend{
+  width: 90.2rem;
+  padding: 2rem;
+  border-radius: 60px;
+}
+.machine1{
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  gap: 10px;
+}
+.bings{
+  transform: translateY(-21rem);
+  margin-left: 16rem;
+  font-family: helvetica;
+  font-weight: bold;
+}
+.muze:hover{
+color: orange;
+}
+.muke:hover{
+color: orange;
+}
+.poland{
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: solid 1px;
+  font-weight: bold;
+ background-color: black;
+ color: white;
+}
+.russia{
+  position: absolute;
+  left: 10px; 
+  bottom: 10px;
+  font-size: 20px;
+  color: white;
+}
+.icons-1{
+  position: relative;
+  
+}
+.china{
+  position: absolute;
+   left: 100px; 
+   bottom: -9.5px;
+   border-radius: 50%;
+   border: solid 1px;
+   padding: 3px 8px;
+   font-weight: bold;
+   background-color: orange;
+   color: white;
+}
+.poland:hover{
+  background-color: orange;
+}
+.china:hover{
+  background-color: white;
+  color: orange;
+}
+.pag{
+  width: 25rem;
+  height: 25rem;
+  border-radius: 20px;
+  
+}
+.king{
+display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border-radius: 10px;
+}
+.entrance{
+  background-color: aliceblue;
+  position: absolute;
+  top: 100px;
+  padding: 2rem;
+  border-radius: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  margin-left: 11rem;
+  color: black;
+  
+}
+.pages-container{
+  margin-top: 200px;
+}
+.grass{
+  font-size: 50px;
+  font-family: helvetica;
+  display: flex;
+  justify-content: center;
+}
+.alls{
+  border-radius: 15px;
+}
 
