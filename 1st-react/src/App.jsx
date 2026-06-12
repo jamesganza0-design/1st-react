@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Layout from "./Component/Layout"
 import Home from "./Component/Home"
 import Catalog from "./Component/catalog"
-import Pages from "./Component/Pages"
+import Blog from "./Component/Blog"
+import AboutUs from "./Component/About Us"
 
 
 
@@ -16,8 +17,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/catalog" element={<Catalog />}/>
-          <Route path="/Pages" element={<Pages />}/>
-
+          <Route path="/Blog" element={<Blog />}/>
+          <Route path="/AboutUs" element={<AboutUs />}/>
           
         </Route>
         

@@ -16,7 +16,7 @@ import { Link } from "react-router";
 function Navbar() {
     const [showHomeDropdown, setShowHomeDropdown] = useState(false)
     const [showCatalogDropdown, setShowCatalogDropdown] = useState(false)
-    const [showPagesDropdown,setShowPagesDropdown] = useState(false)
+    const [showPagesDropdown, setShowPagesDropdown] = useState(false)
     const imagesgb = [
         { id: 1, image: ganza1, title: "Ana Grey Dining Chair", price: "$299.99" },
         { id: 2, image: ganza2, title: "Axis 2-Piece Sectional Sofa", price: "$339.99" },
@@ -28,37 +28,47 @@ function Navbar() {
             <h2 className="iture">miniture</h2>
             <div className="list1">
                 <ul>
-                    <a href="./"
+                    <a className="home-root"
+                        href="./"
                         onMouseEnter={() => setShowHomeDropdown(true)}
                         onMouseLeave={() => setShowHomeDropdown(false)}
-                    ><span>Home</span><RiArrowDropDownLine className="arrow" />
-                        {showHomeDropdown && (
-                            <div className="elegance">
-                                <p>Home v1 — Modern Elegance</p>
-                                <p>Home v2 — Rustic Comfort</p>
-                                <p>Home v3 — Minimalist Chic</p>
-                                <p>Home v4 — Industrial Vibes</p>
-                                <p>Home v5 — Vintage Revival</p>
-                                <p>Home v6 — Kid’s Playland</p>
+                    >
 
-                            </div>
+                        <span>Home</span>
+                        <RiArrowDropDownLine className="arrow" />
+
+                        {showHomeDropdown && (
+                            <>
+
+                                <div className="backdrop"></div>
+
+                                <div className="elegance">
+                                    <p>Home v1 — Modern Elegance</p>
+                                    <p>Home v2 — Rustic Comfort</p>
+                                    <p>Home v3 — Minimalist Chic</p>
+                                    <p>Home v4 — Industrial Vibes</p>
+                                    <p>Home v5 — Vintage Revival</p>
+                                    <p>Home v6 — Kid’s Playland</p>
+                                </div>
+
+                            </>
                         )}
+
                     </a>
+
                     <a href="/"
                         onMouseEnter={() => setShowCatalogDropdown(true)}
                         onMouseLeave={() => setShowCatalogDropdown(false)}
                     ><span><Link to="/catalog">Catalog</Link></span><RiArrowDropDownLine className="arrow" />
                         {showCatalogDropdown && (
-                            <div className="jeans">
-                                <div className="ganza13">
-                                    <h3>Collection</h3>
-                                    <h3>Most Popular</h3>
-                                    <div className="finger">
-                                        <h3>All Accept Chair (26)</h3>
-                                        <GoArrowRight />
-                                    </div>
 
+                            <div className="jeans">
+                                <div className="pular">
+                                    <h3 className="sub-pular3">Collections</h3>
+                                    <h3 className="sub-pular2">Most popular</h3>
+                                    <h3 className="sub-pular1">All Accent Chairs(26)</h3>
                                 </div>
+                               
                                 {imagesgb.map((item) => {
                                     return (
                                         <>
@@ -72,24 +82,29 @@ function Navbar() {
                                 })}
 
                             </div>
+
+
                         )}
                     </a>
-                    <a href="./"
-                    onMouseEnter={() => setShowPagesDropdown(true)}
-                    onMouseLeave={() => setShowPagesDropdown(false)}
-                    ><span><Link to="/Pages">Pages</Link></span><RiArrowDropDownLine className="arrow" />
-                    {showPagesDropdown &&(
-                        <ul className="entrance">
-                      <a href="./"><span>About Us</span></a>
-                      <a href="./"><span>FaQs</span></a>
-                      <a href="./"><span>Contact Us</span></a>
-                      </ul>
-                    )
-                    }
-                    
-                    
+                    <a className="home-root1" href="./"
+                        onMouseEnter={() => setShowPagesDropdown(true)}
+                        onMouseLeave={() => setShowPagesDropdown(false)}
+                    ><span>Pages</span><RiArrowDropDownLine className="arrow" />
+                        {showPagesDropdown && (
+                            <>
+                                <div className="wires"></div>
+                                <ul className="entrance">
+                                    <a href="./"><span><Link to="/AboutUs">AboutUs</Link></span></a>
+                                    <a href="./"><span>FaQs</span></a>
+                                    <a href="./"><span>ContactUs</span></a>
+                                </ul>
+                            </>
+                        )
+                        }
+
+
                     </a>
-                    <a href="./"><span className="blogg">Blog</span></a>
+                    <a href="./"><span className="blogg"><Link to="/Blog">Blog</Link></span></a>
                     <a href="./"><span className="blogg">Contact</span></a>
                 </ul>
             </div>
